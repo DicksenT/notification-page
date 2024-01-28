@@ -1,54 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Notifications page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-  <link rel="stylesheet" href="style.css">
-  <script defer src="main.js"></script>
-</head>
-<body>
-<div class="container">
-  Notifications 3
+    <title>Frontend Mentor | notification unreads page</title>
 
-  Mark all as read
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="highlight">
+          Notifications
+          <div class="num">7</div>
+        </div>
+        <div class="remove">Mark all as read</div>
+      </div>
 
-  Mark Webber reacted to your recent post My first tournament today!
-  1m ago
+      <div class="notifications">
+        <div class="notification unread">
+          <div class="profile">
+            <img src="assets/images/avatar-mark-webber.webp" alt="" />
+          </div>
+          <div class="info">
+            <div class="text">
+              <div class="action">
+                <span class="name">Mark Webber&nbsp;</span>reacted to your
+                recent post <span class="post">My first tournament today!</span
+                ><span class="red"></span>
+              </div>
+            </div>
+            <div class="time">1m ago</div>
+          </div>
+        </div>
 
-  Angela Gray followed you
-  5m ago
+        <div class="notification unread">
+          <div class="profile">
+            <img src="assets/images/avatar-angela-gray.webp" alt="" />
+          </div>
+          <div class="info">
+            <div class="text">
+              <div class="action">
+                <span class="name">Angela Gray&nbsp;</span>followed you<span
+                  class="red"
+                ></span>
+              </div>
+            </div>
+            <div class="time">5m ago</div>
+          </div>
+        </div>
 
-  Jacob Thompson has joined your group Chess Club
-  1 day ago
+        <div class="notification unread">
+          <div class="profile">
+            <img src="assets/images/avatar-jacob-thompson.webp" alt="" />
+          </div>
+          <div class="info">
+            <div class="text">
+              <div class="action">
+                <span class="name">Jacob Thompson&nbsp;</span>has joined your
+                group <span class="club">Chess Club</span
+                ><span class="red"></span>
+              </div>
+            </div>
+            <div class="time">1 day ago</div>
+          </div>
+        </div>
 
-  Rizky Hasanuddin sent you a private message
-  5 days ago
-  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
-  I'm already having lots of fun and improving my game.
+        <div class="notification unread">
+          <div class="profile">
+            <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="" />
+          </div>
+          <div class="info">
+            <div class="text">
+              <div class="action">
+                <span class="name">Rizky Hasanuddin&nbsp;</span>sent you a
+                private message<span class="red"></span>
+              </div>
+            </div>
+            <div class="time">5 days ago</div>
+            <div class="msg">
+              Hello, thanks for setting up the Chess Club. I've been a member
+              for a few weeks now and I'm already having lots of fun and
+              improving my game.
+            </div>
+          </div>
+        </div>
 
-  Kimberly Smith commented on your picture
-  1 week ago
+        <div class="notification unread">
+          <div class="profile">
+            <img src="assets/images/avatar-kimberly-smith.webp" alt="" />
+          </div>
+          <div class="info_container">
+            <div class="info">
+              <div class="text">
+                <div class="action">
+                  <span class="name">Kimberly Smith&nbsp;</span>commented on
+                  your picture<span class="red"></span>
+                </div>
+              </div>
+              <div class="time">1 week ago</div>
+            </div>
+            <div class="photo">
+              <img src="assets/images/image-chess.webp" alt="" />
+            </div>
+          </div>
+        </div>
 
-  Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
-  2 weeks ago
+        <div class="notification unread">
+          <div class="profile">
+            <img src="assets/images/avatar-nathan-peterson.webp" alt="" />
+          </div>
+          <div class="info">
+            <div class="text">
+              <div class="action">
+                <span class="name">Nathan Peterson&nbsp;</span>reacted to your
+                recent post
+                <span class="post"
+                  >5 end-game strategies to increase your win rate</span
+                >
+                <span class="red"></span>
+              </div>
+            </div>
+            <div class="time">2 weeks ago</div>
+          </div>
+        </div>
 
-  Anna Kim left the group Chess Club
-  2 weeks ago
-</div>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <div class="notification unread">
+          <div class="profile">
+            <img src="assets/images/avatar-anna-kim.webp" alt="" />
+          </div>
+          <div class="info">
+            <div class="text">
+              <div class="action">
+                <span class="name">Anna Kim&nbsp;</span>left the group
+                <span class="club">Chess Club</span><span class="red"></span>
+              </div>
+            </div>
+            <div class="time">2 weeks ago</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Dicksen Tan</a>.
+    </div>
+  </body>
 </html>

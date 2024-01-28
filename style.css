@@ -5,3 +5,138 @@
     box-sizing: border-box;
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
+body{
+    background-color: hsl(210, 60%, 98%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100dvh;
+}
+.container{
+    background-color: white;
+    width: 375px;
+    padding: 12px;
+}
+.attribution{
+    display: none;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.highlight{
+    display: flex;
+    gap: 12px;
+    font-weight: 800;
+    font-size: 18px;
+}
+.num{
+    background-color: hsl(219, 85%, 26%);
+    color: white;
+    width: 28px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.remove{
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.remove:hover,
+.name:hover{
+    color: hsl(219, 85%, 26%);
+}
+.notification{
+    display: flex;
+    margin-top: 8px;
+    padding: 12px;
+}
+.notification.unread{
+    background-color: hsl(205, 33%, 90%);
+    border-radius: 12px;
+}
+.profile{
+    width: 28px;
+    height: 28px;
+    margin-right: 8px;
+}
+.profile img{
+    width: 100%;
+    height: 100%;
+}
+.info{
+    font-size: 12px;
+    width: 89%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.name{
+    font-weight: 800;
+    color: black;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.red{
+    background-color: hsl(1, 90%, 64%);
+    width: 6px;
+    height: 6px;
+    border-radius: 10px;
+    display: inline-flex;
+    margin-left: 4px;
+    margin-bottom: 1px;
+}
+.msg{
+    border: 1px solid hsl(211, 68%, 94%);
+    border-radius: 4px;
+    padding: 8px;
+    margin-top: 8px;
+    color: hsl(219, 12%, 42%);
+}
+.time,
+.action{
+    color:  hsl(219, 12%, 42%);
+}
+.info_container{
+    display: flex;
+    justify-content: space-between;
+}
+.info_container .info{
+    width: 85%;
+}
+.photo{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.photo img{
+    width: 100%;
+    height: 100%;
+}
+.club{
+    color: hsl(219, 85%, 26%);
+    cursor: pointer;
+}
+.post{
+    cursor: pointer;
+    color: hsl(224, 21%, 14%);
+}
+
+@media(min-width:1024px){
+    .container{
+        width: 600px;
+        margin: auto;
+        border-radius: 12px;
+    }
+    .info_container{
+        width: 89%;
+    }
+}
