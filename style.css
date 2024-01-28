@@ -17,6 +17,7 @@ body{
     background-color: white;
     width: 375px;
     padding: 12px;
+    height: 100%;
 }
 .attribution{
     display: none;
@@ -135,6 +136,7 @@ body{
         width: 600px;
         margin: auto;
         border-radius: 12px;
+        height: auto;
     }
     .info_container{
         width: 89%;
